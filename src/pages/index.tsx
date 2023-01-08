@@ -29,7 +29,7 @@ const HomePage: NextPage = () => {
       <div className='bg-c-blue-900 min-h-screen w-full relative text-c-blue-100'>
         {/* <header className='bg-c-blue-700 h-12' /> */}
 
-        <main className='flex w-full p-4 gap-4'>
+        <main className='flex w-full p-4 gap-4 portrait:flex-col'>
           <DivisionList conference='West' teamsInfo={standings?.filter(teamData => teamData.Conference == 'West')} />
           <DivisionList conference='East' teamsInfo={standings?.filter(teamData => teamData.Conference == 'East')} />
         </main>
